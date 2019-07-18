@@ -167,7 +167,9 @@
                   HeadersVisibility="All"
                   ItemsSource="{Binding Path=Albums}"
                   RowHeaderWidth="20"
-                  SelectionUnit="FullRow">
+                  SelectionUnit="FullRow"
+                  FlowDirection="RightToLeft"
+                  >
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Binding="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Path=IsSelected, Mode=OneWay}"
                                         EditingElementStyle="{DynamicResource MetroDataGridCheckBox}"
